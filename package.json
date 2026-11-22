@@ -1,0 +1,60 @@
+{
+  "name": "pw-tracediff",
+  "version": "0.1.0",
+  "description": "Diff a passing and a failing Playwright trace.zip: first divergent action, network, console errors and duration outliers",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "author": "Gary Parker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qa-gary-parker/tracediff.git"
+  },
+  "keywords": [
+    "playwright",
+    "trace",
+    "diff",
+    "flaky",
+    "debugging",
+    "ci"
+  ],
+  "bin": {
+    "tracediff": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.map",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepare": "npm run build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "npm run typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "fixtures:gen": "node fixtures-gen/generate.mjs"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "jszip": "^3.10.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^20.19.43",
+    "typescript": "~5.9",
+    "vitest": "^4.1.12"
+  }
+}
