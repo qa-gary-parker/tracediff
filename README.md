@@ -5,6 +5,8 @@ changed in the network and console around it.
 
 On npm as `pw-tracediff`; the CLI command is `tracediff`.
 
+Overview and FAQ: [garyparker.dev/projects/tracediff](https://garyparker.dev/projects/tracediff). Videos: [youtube.com/@garyparkerdev](https://www.youtube.com/@garyparkerdev)
+
 ## The problem
 
 A test fails in CI and passed an hour ago. The trace viewer shows one run at a time, so you compare two
