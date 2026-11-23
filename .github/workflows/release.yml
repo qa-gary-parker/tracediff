@@ -30,7 +30,14 @@ jobs:
       - run: npm run lint
       - run: npm run build
       - run: npm test
-      - run: npm publish --provenance --access public
+      - name: Publish to npm
+        run: |
+          name=$(node -p "require('./package.json').name")
+          if npm view "$name@${GITHUB_REF_NAME#v}" version >/dev/null 2>&1; then
+            echo "$name@${GITHUB_REF_NAME#v} is already on npm, skipping publish"
+          else
+            npm publish --provenance --access public
+          fi
       - name: Create GitHub release
         run: gh release create "$GITHUB_REF_NAME" --generate-notes --verify-tag
         env:
