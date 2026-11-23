@@ -1,6 +1,6 @@
 {
   "name": "pw-tracediff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Diff a passing and a failing Playwright trace.zip: first divergent action, network, console errors and duration outliers",
   "type": "module",
   "private": false,
