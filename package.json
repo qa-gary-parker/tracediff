@@ -6,6 +6,7 @@
   "private": false,
   "license": "MIT",
   "author": "Gary Parker",
+  "homepage": "https://garyparker.dev/projects/tracediff",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/qa-gary-parker/tracediff.git"

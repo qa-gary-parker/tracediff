@@ -5,7 +5,7 @@ changed in the network and console around it.
 
 On npm as `pw-tracediff`; the CLI command is `tracediff`.
 
-Overview and FAQ: [garyparker.dev/projects/tracediff](https://garyparker.dev/projects/tracediff). Videos: [youtube.com/@garyparkerdev](https://www.youtube.com/@garyparkerdev)
+Overview and FAQ: [garyparker.dev/projects/tracediff](https://garyparker.dev/projects/tracediff). More tools: [garyparker.dev/projects](https://garyparker.dev/projects). Videos: [youtube.com/@garyparkerdev](https://www.youtube.com/@garyparkerdev)
 
 ## The problem
 
